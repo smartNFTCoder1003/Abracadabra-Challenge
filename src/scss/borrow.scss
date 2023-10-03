@@ -1,0 +1,27 @@
+@import './color';
+
+.borrow {
+
+    .panel {
+        .chose-chain {
+            .btn-chain {
+                color: white;
+                background-color: $bg_default;
+            }
+
+            .btn-chain:hover {
+                background-color: $bg_hover;
+            }
+        }
+
+        .learn-borrow {
+            padding: 3rem;
+            background-color: $bg_hover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+@import './color';;
+
+body {
+    margin: 0;
+    color: white!important;
+    font-family: 'venus-rising-regular', sans-serif!important;
+    font-size: 14px!important;
+    letter-spacing: 2px;
+
+    .bg-main {
+        background-color: #212429;
+        z-index: -1;
+    }
+
+    .bg-shine {
+        background-image: radial-gradient(50% 60% at 50% 30%, #C850C0 -400%, transparent 100%);
+        width: 200vw;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+    }
+
+    .btn {
+        background-color: $bg_default;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        // border-radius: 9990px;
+        cursor: pointer;
+        transition: 0.3s linear;
+        color: gray;
+        font-size: 12px;
+    }
+
+    .btn:hover {
+        // background: $bg_hover;
+        border-color: gray;
+        color: #9c6eff;
+        transition: 0.3s linear;
+    }
+
+    .form-panel {
+        position: relative;
+        input {
+            width: 100%;
+            height: auto;
+            outline: none;
+            background-color: $bg_hover;
+            text-align: right;
+            height: 60px;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 20px;
+            border: 1px solid gray;
+            padding-left: 45%;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+          }
+
+        input::placeholder {
+            color: gray;
+        }
+
+        button {
+            position: absolute;
+            left: 0px;
+            margin: 5px;
+            height: 50px;
+            min-width: 200px;
+        }
+    }
+
+    .panel {
+        --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        color: white;
+        padding: 1rem;
+        background-color: $bg_default;
+        border-radius: 0.75rem;
+        height: 100%;
+    }
+
+    .text-gray {
+        color: gray!important;
+    }
+    
+    .text-purple {
+        color: #9c6eff;
+    }
+
+    ::selection {
+        color: white;
+        background-color: #9c6eff;
+    }
+}
